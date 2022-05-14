@@ -1,0 +1,43 @@
+<section class="bg-stone-100 py-10 md:py-20">
+  
+  <div class="max-w-5xl mx-auto md:px-5 leading-relaxed">
+	<h2 class="font-header font-bold max-w-2xl px-5 leading-tight mb-5 md:mb-10 text-4xl md:text-5xl">
+	  <span class="text-stone-500">In</span> Lite Kit<span class="animate-ping">_</span>
+	</h2>
+
+    <div class="flex flex-col md:flex-row gap-10">
+      <div class="flex-1 p-5 md:p-10 bg-white">
+        <h3 class="capitalize font-bold mb-5 font-header">Field Guide chapters</h3>
+
+        <div class="space-y-3">
+          <%= render "chapter_row", chapter: "Introduction", title: "Bootstrap" %>
+          <%= render "chapter_row", chapter: "Chapter 1", title: "Formatting" %>
+          <%= render "chapter_row", chapter: "Chapter 2", title: "Dead Code" %>
+          <%= render "chapter_row", chapter: "Chapter 3", title: "Nested Code" %>
+          <%= render "chapter_row", chapter: "Chapter 4", title: "Using Objects" %>
+          <%= render "chapter_row", chapter: "Chapter 5", title: "Big Blocks" %>
+          <%= render "chapter_row", chapter: "Chapter 6", title: "Naming" %>
+          <%= render "chapter_row", chapter: "Chapter 7", title: "Removing Comments" %>
+          <%= render "chapter_row", chapter: "Chapter 8", title: "Reasonable Returns" %>
+          <%= render "chapter_row", chapter: "Chapter 9", title: "Rule of Three" %>
+          <%= render "chapter_row", chapter: "Chapter 10", title: "Symmetry" %>
+          <%= render "chapter_row", chapter: "Epilogue", title: "Exit" %>
+        </div>
+      </div>
+
+      <div class="bg-stone-100 flex-1 flex flex-col p-5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 md:h-16 md:w-16 stroke-stone-500 mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /> </svg>
+
+        <div class="">
+          <h3 class="capitalize md:mb-5 font-bold font-header">Code Examples</h3>
+          <div class="space-y-5">
+            <p>You can download the complete code examples used in BaseCode.</p>
+            <p>The folders are organized by chapter and files are named for each the example with before and after suffixes for comparison.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

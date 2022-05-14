@@ -1,0 +1,48 @@
+<section class="bg-stone-100 pt-20 pb-64">
+  <div class="max-w-5xl mx-auto px-5">
+
+	<h2 class="font-header font-bold max-w-xl leading-tight mb-10 text-4xl md:text-5xl">
+      It's a field guide,
+      <span class="text-stone-500">not a book</span><span class="text-stone-500 animate-ping">_</span>
+	</h2>
+
+    <div class="flex flex-col md:flex-row md:gap-20">
+      <div class="space-y-5 mb-10 max-w-2xl">
+        <p>BaseCode applies real-world practices to everyday code. <strong class="font-bold">There's no fluff. No theory.</strong> I tackle common problems and use code to show solutions.</p>
+        <p>Each topic is neatly organized into a chapter.</p>
+        <ul class="space-y-5">
+          <li class="flex gap-2 items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 mt-1 w-6 shrink-0 stroke-stone-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /> </svg>
+          If you have a bunch of nested code, read Nested Code.</li>
+          <li class="flex gap-2 items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mt-1 shrink-0 stroke-stone-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /> </svg>
+If you want to break up long methods, jump to Big Blocks.</li>
+          <li class="flex gap-2 items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 mt-1 shrink-0 w-6 stroke-stone-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /> </svg>
+You can read it cover to cover or jump around to the practices that interest you.</li>
+        </ul>
+      </div>
+
+    <ul class="font-bold mb-5 text-center text-base md:text-2xl font-header flex md:flex-col gap-10"> 
+      <li class="flex-1"><span class="text-5xl block leading-none">10</span> practices</li>
+      <li class="flex-1"><span class="text-5xl block leading-none">40</span> code samples</li>
+      <li class="flex-1"><span class="text-5xl block leading-none">118</span> pages</li>
+    </ul>
+
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-5">
+    <%= render "chapter_card", content: "Writing code that prioritizes **readability by humans**, not a computer" %>
+    <%= render "chapter_card", content: "**Avoiding code rot** with analysis and automation" %>
+    <%= render "chapter_card", content: "Untangling nested code to **improve visual honesty** and reduce reader overhead" %>
+    <%= render "chapter_card", content: "Introducing objects to **encapsulate complexity**" %>
+    <%= render "chapter_card", content: "**Refactoring long blocks** of code by understanding reading levels" %>
+    <%= render "chapter_card", content: "Making **naming things easy** with context and time" %>
+    <%= render "chapter_card", content: "Using code as the primary signal, **not comments**" %>
+    <%= render "chapter_card", content: "Avoiding unnecessary code by using **reasonable return values**" %>
+    <%= render "chapter_card", content: "Delaying the need to remove duplication with the **Rule of Three**" %>
+    <%= render "chapter_card", content: "**Improving code flow** with symmetry" %>
+    <%= render "chapter_card", content: "Deferring design decisions to **reduce anxiety** when writing code" %>
+  </div>
+</section>
+
